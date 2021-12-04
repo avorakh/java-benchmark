@@ -1,0 +1,7 @@
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
+enableFeaturePreview("VERSION_CATALOGS")
+
+rootProject.name = 'java-benchmark'
+
+include 'collection-benchmark'
+include 'util-benchmark'

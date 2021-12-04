@@ -1,0 +1,15 @@
+plugins {
+    id "me.champeau.jmh"
+}
+
+dependencies {
+    jmh "org.openjdk.jmh:jmh-core:$jmhVersion"
+    jmh "org.openjdk.jmh:jmh-generator-annprocess:$jmhVersion"
+}
+
+jmh {
+    //jvm ='/usr/lib/jvm/jdk-17.0.1+12/bin/java'
+    //humanOutputFile = project.file("${project.buildDir}/reports/jmh/human.txt") // human-readable output file
+    resultsFile = project.file("${project.buildDir}/reports/jmh/results.json") // results file
+    resultFormat = 'JSON' // Result format type (one of CSV, JSON, NONE, SCSV, TEXT)
+}
